@@ -69,7 +69,8 @@ class Generator:
             contents = open(wordlist_file).read().replace('\n', ' ')
             wordlist = text_to_word_sequence(
                 contents,
-                filters='!"#$%&()*+,-./:;<=>?@[\]^_`{|}~0123456789–…\'\"’«·»'
+                #filters='!"#$%&()*+,-./:;<=>?@[\]^_`{|}~0123456789–…\'\"’«·»'
+                filters='!"#$%&()*+,-./:;<=>?@[\]^_`{|}~…\'\"’«·»π▒'
             )
 
         # Keep only unique words:
